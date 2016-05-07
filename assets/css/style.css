@@ -128,12 +128,84 @@ nav ul li a {
 	color: #000;
 }
 
-nav ul li:hover {
+nav ul li:hover, .more:hover {
 	background-color: #ccc;
 }
 
-nav ul li:hover>a {
+nav ul li:hover>a, .more:hover {
 	color: #000;
+}
+
+.main {
+	padding-top: 172px;
+}
+
+.wrapper {
+	background-image: url("../img/parallax-img1.jpg");
+	background-position: 50% 50%;
+	background-size: cover;
+	color: white;
+}
+
+.wrapper-content {
+	padding: 150px 0;
+}
+
+h2 {
+	margin: 0 0 32px;
+	font-family: 'Times New Roman';
+	font-weight: normal;
+	font-size: 60px;
+	line-height: 1em;
+}
+
+.more {
+	display: inline-block;
+	padding: 16.5px 40px;
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+	background-color: #000;
+	color: #fff;
+	transition: 0.3s all;
+}
+
+.description {
+	padding: 140px 0 144px 0;
+	background-image: url("../img/box-img1.jpg");
+	background-position: bottom center;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.inner {
+	text-align: left;
+}
+
+.inner h2 {
+	font: 24px/36px 'Roboto', sans-serif;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.inner p {
+	margin: 0 0 41px 0;
+	font: 18px/30px '\'Times New Roman\', Times, serif',serif;
+	color: #5b5b5b;
+}
+
+.parallax {
+	padding: 140px 0 144px 0;
+	background-image: url("../img/parallax-img2.jpg");
+	background-position: center;
+	color: #fff;
+}
+
+.parallax h2, .parallax p {
+	color: #fff;
 }
 
 
@@ -169,6 +241,7 @@ nav ul li:hover>a {
 	nav ul li:hover {
 		background-color: transparent;
 	}
+
 }
 
 @media only screen and (min-width: 992px) {
@@ -207,6 +280,35 @@ nav ul li:hover>a {
 
 	nav ul li:last-child {
 		padding-right: 0;	
+	}
+
+	.main {
+		padding-top: 70px;
+	}
+
+	.wrapper {
+		background-attachment: fixed;
+	}
+
+	.wrapper-content {
+		padding: 368px 0 287px 0;
+	}
+
+	.description {
+		background-size: auto;
+	}
+
+	.inner {
+		width: 41.66667%;
+		float: right;
+	}
+
+	.parallax {
+	background-attachment: fixed;
+	}
+
+	.parallax .inner {
+		float: left;
 	}
 
 }
